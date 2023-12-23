@@ -1,0 +1,384 @@
+/* general styling ========================*/
+
+*,
+html,
+body,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+section{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+}
+
+.bg-section {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.content-section {
+  z-index: 10;
+  position: absolute;
+  top: 25%;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+.op {
+  font-weight: normal;
+  font-size: large;
+}
+
+.hover {
+  position: absolute;
+  z-index: 100;
+  width: 15rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.jargon {
+  position: absolute;
+  scale: 0;
+  transition: 1s;
+}
+
+.show .jargon {
+  scale: 1;
+}
+
+
+/* hero ========================*/
+
+.hero {
+  color: white;
+}
+
+.bHero {
+  background-image: url("../asset/h1.png");
+}
+
+.hero p {
+  top: 7%;
+  left: 5%;
+  position: relative;
+  display: block;
+  font-weight: bold;
+  margin: 0; padding: 0;
+  z-index: 15;
+  scale: 0;
+  transition: 1s;
+}
+
+
+.hero.show-animate p {
+  scale: 1;
+}
+
+
+/* suku 1 ========================*/
+
+.suku1 {
+  background-color: #2b5e7d;
+  color: white;
+}
+
+.suku1 .hover {
+  top: 10rem;
+  left: -15rem;
+}
+
+.suku1.show-animate .hover {
+  left: 0;
+}
+
+.suku1 .hover:hover {
+  left: 2.5rem;
+  scale: 1.5;
+}
+
+.b1 {
+  background-image: url("../asset/s1-2.png");
+}
+
+.s1-3 {
+  top: 15%;
+}
+
+.suku1 p:last-of-type {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+.suku1 p {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+  display: block;
+  font-weight: bold;
+  margin: 0 9rem 0 0;
+}
+
+.s1-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  transform: scale(1);
+}
+
+/* suku 2 ========================*/
+
+.suku2 {
+  background-color: #71add1;
+  color: rgb(255, 255, 255);
+}
+
+.suku2 .hover {
+  right: -15rem;
+  top: 10rem;
+}
+
+.suku2.show-animate .hover {
+  right: 0;
+}
+
+.suku2 .hover:hover {
+  scale: 1.5;
+  right: 2.5rem;
+}
+
+.s2-1 {
+  left: 0;
+}
+
+.s2-2 {
+  bottom: -5%;
+  left: 0;
+}
+
+.b2 {
+  background-image: url("../asset/s2-1.png");
+}
+
+.suku2 p {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  display: block;
+  font-weight: bold;
+  margin: 0 5rem 0 0;
+}
+
+
+.suku2 p:last-of-type {
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  color: transparent;
+}
+
+/* suku 3 ========================*/
+
+.suku3 {
+  background-color: #BF8D53;
+  color: white;
+}
+
+.suku3 .hover {
+  left: -15rem;
+  top: 10rem;
+}
+
+.suku3.show-animate .hover {
+  left: 0;
+}
+
+.suku3 .hover:hover {
+  scale: 1.5;
+  left: 2.5rem;
+}
+
+.s3-1 {
+  right: 0;
+  top: 15%;
+}
+
+.b3 {
+  background-image: url("../asset/s3-1.png");
+  top: 5%;
+}
+
+.s3-2 {
+  top: 15%;
+  right: 0;
+}
+
+.suku3 p:last-of-type {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+.suku3 p {
+  position: absolute;
+  right: 0;
+  top: 35%;
+  display: block;
+  font-weight: bold;
+  margin: 0 5rem 0 0;
+}
+
+.s3-4 {
+  left: -50%;
+  top: 20%;
+}
+
+/* suku 4 ========================*/
+
+.suku4 {
+  color: white;
+}
+
+.suku4 .hover {
+  left: -15rem;
+  top: 10rem;
+}
+
+.suku4.show-animate .hover {
+  left: 0;
+}
+
+.suku4 .hover:hover {
+  scale: 1.5;
+  left: 2.5rem;
+}
+
+.b4 {
+  background-image: url("../asset/s4-1.png");
+}
+
+.suku4 p:last-of-type {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+.suku4 p {
+  position: absolute;
+  right: 5%;
+  top: 55%;
+  display: block;
+  font-weight: bold;
+  margin: 0 5rem 0 0;
+}
+
+/* footer ========================*/
+
+footer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 70dvh;
+  color: white;
+}
+
+.gradient-div {
+  position: absolute; /* Mengatur posisi absolut */
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #2b5e7d, #71add1);
+}
+
+footer p:nth-child(1) {
+  font-size: 12px;
+}
+
+/* ukuran layar lg */
+
+@media (max-width: 1420px) {
+  .text1 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  .text2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  .text3 {
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* ukuran layar md */
+
+@media (max-width: 576px) {
+  .jargon {
+    display: none;
+  }
+
+  .show .jargon {
+    scale: 0;
+  }
+
+  .text1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  .text2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  .text3 {
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    left: 2%;
+    right: 2%;
+  }
+
+  .hover {
+    width: 10rem;
+  }
+
+  .suku1 p {
+    width: 90%;
+    top: 10%;
+    text-align: end;
+  }
+
+  .suku2 p {
+    top: 45%;
+  }
+
+  .suku3 p {
+    width: 90%;
+    top: 50%;
+    text-align: end;
+  }
+}

@@ -1,0 +1,315 @@
+/* general styling ========================*/
+
+*,
+html,
+body,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+section {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+}
+
+.bg-section {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.content-section {
+  z-index: 10;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* suku 3 ========================*/
+
+.suku3 {
+    background-color: #BF8D53;
+    color: white;
+  }
+  
+  .s3-1 {
+    right: 0;
+    top: 15%;
+  }
+  
+  .b3 {
+    background-image: url("../asset/s3-1.png");
+    top: 5%;
+  }
+  
+  .s3-2 {
+    top: 15%;
+    right: 0;
+  }
+  
+  .suku3 p:last-of-type {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+  
+  .suku3 p {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    display: block;
+    font-weight: bold;
+    margin: 0 5rem 0 0;
+  }
+  
+  .s3-4 {
+    left: -50%;
+    top: 20%;
+  }
+
+/* sejarah ========================*/
+
+.sejarah {
+  background-color: #edf8ff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.card {
+  width: 70%;
+  color: white;
+  height: 70%;
+  background-color: white;
+  background-image: linear-gradient(to bottom, #BF8D53, #7e5527);
+  border-radius: 30px;
+  justify-content: center;
+  align-items: end;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);
+}
+
+.custom-row {
+  width: 80vw;
+  overflow: auto;
+}
+
+.img-content {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);
+  width: 25vw;
+  height: 25vw;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.img-content img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* keunikan ========================*/
+
+.keunikan {
+  background-color: #BF8D53;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.keunikan .card {
+  align-items: start;
+  background-color: #edf8ff;
+  background-image: linear-gradient(to bottom, #edf8ff, #edf8ff);
+  color: #BF8D53;
+}
+
+.keunikan .text-sm {
+  text-align: right;
+}
+
+/* budaya ========================*/
+
+.budaya {
+  background-color: #edf8ff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+/* video ========================*/
+
+.video {
+  background-color: #BF8D53;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.video .card {
+  color: #BF8D53;
+  gap: 0.5rem;
+  background-color: #edf8ff;
+  background-image: linear-gradient(to bottom, #edf8ff, #edf8ff);
+  justify-content: start;
+  align-items: center;
+}
+
+.video .img-content {
+  height: 100%;
+  width: 100%;
+}
+
+.video .img-content iframe {
+  object-fit: cover;
+}
+
+/* footer ========================*/
+
+footer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 70dvh;
+  color: white;
+}
+
+.gradient-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #BF8D53, #66431b);
+}
+
+footer p:nth-child(1) {
+  font-size: 12px;
+}
+
+/* ukuran layar lg */
+
+@media (max-width: 1420px) {
+  .text1 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  .text2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  .text3 {
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* ukuran layar md */
+
+@media (max-width: 992px) {
+  .text1 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  .text2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  .text3 {
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* ukuran layar sm */
+
+@media (max-width: 576px) {
+  .text1 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  .text2 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  .text3 {
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card {
+    height: 80%;
+    width: 90%;
+    justify-content: end;
+    /* text-align: center; */
+    align-items: center;
+  }
+
+  .custom-row {
+    min-height: 85vh;
+    overflow: auto;
+  }
+
+  .img-sm {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-content {
+    width: 250px;
+    height: 150px;
+  }
+
+  .text-sm {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .keunikan .text-sm {
+    text-align: center;
+  }
+
+  .keunikan .card {
+    height: 75%;
+    width: 90%;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .keunikan .custom-row {
+    min-height: 85vh;
+    overflow: auto;
+  }
+}
